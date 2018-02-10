@@ -1,0 +1,11 @@
+.obi-main{
+    background: url('https://mrwallpaper.com/wp-content/uploads/Obi-Wan-Kenobi.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}

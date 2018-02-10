@@ -1,0 +1,11 @@
+.leia-main{
+    background: url('http://www.gsfdcy.com/data/img/68/1927147-princess-leia-wallpaper.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}

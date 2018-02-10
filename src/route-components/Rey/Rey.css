@@ -1,0 +1,11 @@
+.rey-main{
+    background: url('https://www.hdwallpapers.in/walls/rey__bb_8_star_wars_the_force_awakens-wide.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}

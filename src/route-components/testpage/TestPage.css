@@ -1,0 +1,47 @@
+.testpage-main{
+    background: url('http://7wallpapers.net/wp-content/uploads/6_Rogue-One-A-Star-Wars-Story.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.wrapper-testpage{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    height: 100vh;
+
+}
+.wrapper-testpage div {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+      
+} 
+#top-radio{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    align-items: center;
+    background: skyblue
+}
+#episode-box{
+    align-items: stretch;
+    justify-content: flex-end;
+
+}
+#title{
+    font-size: 50px;
+    align-items: center;
+    color: yellow;
+    background: black;
+}
+#charSubmit{
+    align-items: center;
+}

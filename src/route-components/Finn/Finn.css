@@ -1,0 +1,11 @@
+.finn-main{
+    background: url('https://static2.srcdn.com/wp-content/uploads/John-Boyega-Finn-Wallpaper-Star-Wars-7.jpg?q=50&w=1000&h=500&fit=crop&dpr=1.5') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
