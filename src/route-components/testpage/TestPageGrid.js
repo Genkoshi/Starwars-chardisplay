@@ -33,7 +33,7 @@ export default class Grid extends Component {
 
 
         return(
-        <div class='wrapper-testpage' >
+        <div className='wrapper-testpage' >
             <div ></div>
             <div id='episode-box' >
                 <Episode name="Movie" changeFn={this.changeMovie}/>

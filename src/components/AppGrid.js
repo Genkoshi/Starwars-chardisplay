@@ -6,9 +6,9 @@ import EnterButton from './EnterButton.js'
 export default class Grid extends Component {
     render() {
         return(
-        <div class='wrapper-main' >
+        <div className='wrapper-main' >
             <div ></div>
-            <div class='box1'></div>
+            <div className='box1'></div>
             <div></div>
             <div></div>
             <div></div>

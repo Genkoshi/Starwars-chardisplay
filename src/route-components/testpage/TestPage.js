@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import '../../reset.css';
 import './TestPage.css';
 import TestPageGrid from './TestPageGrid.js';
@@ -16,7 +15,7 @@ class TestPage extends Component {
   
     render() {
       return (
-        <div class='testpage-main' >
+        <div className='testpage-main' >
          <HomeButton />
           <TestPageGrid />
         </div>
