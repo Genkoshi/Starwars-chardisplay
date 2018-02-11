@@ -9,3 +9,13 @@
     width: 100%;
     position: fixed;
 }
+
+.leia-stats{
+    height: 50vh;
+    width: 45%;
+    margin-left: 68%;
+    margin-top: 32vh;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+}

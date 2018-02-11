@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Input from './Input.js';
-import Button from './Button.js';
 import EnterButton from './EnterButton.js'
 
 export default class Grid extends Component {

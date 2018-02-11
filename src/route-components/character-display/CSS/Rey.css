@@ -9,3 +9,13 @@
     width: 100%;
     position: fixed;
 }
+
+.rey-stats{
+    height: 50vh;
+    width: 55%;
+    margin-left: 5%;
+    margin-top: 35vh;
+    z-index: 2;
+    color: black;
+    font-size: 50px;
+}

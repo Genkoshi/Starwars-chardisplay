@@ -9,3 +9,14 @@
     width: 100%;
     position: fixed;
 }
+
+.finn-stats{
+    height: 51vh;
+    width: 45%;
+    margin-left: 65%;
+    margin-top: 5vh;
+    z-index: 2;
+    color: black;
+    background: skyblue;
+    font-size: 50px;
+}
