@@ -1,0 +1,24 @@
+.default-main{
+    background: url('https://i.imgur.com/WQ2wCYD.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.default-stats{
+    height: 52vh;
+    width: 35%;
+    margin-left: .5%;
+    margin-top: 10vh;
+    z-index: 2;
+    color: white;
+    background: black;
+    font-size: 50px;
+    opacity: .7;
+    border-radius: 20px;
+    padding: 2px;
+}

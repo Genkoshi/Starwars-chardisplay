@@ -11,5 +11,6 @@ const port = 3003;
 
 const baseURL = '/api/char';
 app.post(baseURL, cc.create);
+app.delete(baseURL, cc.delete);
 
 app.listen( port, () => { console.log(`Server is listening on port ${port}`) } );

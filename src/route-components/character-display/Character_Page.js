@@ -6,10 +6,11 @@ import './CSS/Maul.css';
 import './CSS/Obi-Wan.css';
 import './CSS/Rey.css';
 import './CSS/Luke.css';
+import './CSS/Default.css';
 import HomeButton from '../../components/HomeButton.js';
 import axios from 'axios';
 
-export default class Luke extends Component {
+export default class Character_Page extends Component {
     constructor(props){
         super(props)
 
@@ -22,8 +23,8 @@ export default class Luke extends Component {
             birthYear: '',
             gender: '',
             homeworld: '',
-            backIMG: '',
-            statPos: ''
+            backIMG: 'default-main',
+            statPos: 'default-stats'
         }
         this.changeBackImg = this.changeBackImg.bind(this);
         this.changeStatPos = this.changeStatPos.bind(this);
@@ -70,7 +71,7 @@ export default class Luke extends Component {
                 this.setState({ statPos: 'maul-stats' });
                 break;
             case 'Obi-Wan': 
-                this.setState({ statPos: 'obi-stats' })
+                this.setState({ statPos: 'obi-stats' });
                 break;
             default: break;
         }
@@ -84,7 +85,9 @@ export default class Luke extends Component {
         this.changeStatPos(this.props.match.params.name)
         //search swapi for people that have url param in the name,
         //then decunstruct the values wanted and put them in state.
+        
         axios.get(`https://swapi.co/api/people/?search=${this.props.match.params.name}`).then(res => {
+            if(res.data.count !== 0){
             let {name, height, hair_color, skin_color, eye_color, birth_year, gender, homeworld} = res.data.results[0];
             this.setState({
                         name: name,
@@ -102,9 +105,10 @@ export default class Luke extends Component {
                                     homeworld: name
                                 })
                             })
+            }
         }
-
     )
+    
  }
 
     render(){
@@ -121,7 +125,7 @@ export default class Luke extends Component {
         return(
             <div className={this.state.backIMG} >
                 <HomeButton/>
-                <div className={!!this.state.homeworld ? this.state.statPos : null} >
+                <div className={this.state.statPos} >
                     {stats}   
                 </div>
             </div>

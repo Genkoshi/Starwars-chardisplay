@@ -29,7 +29,7 @@ export default class Grid extends Component {
     render() {
         var charDisplay = !!this.state.movie ? <Characters movie={this.state.movie} name="Characters" changeFn={this.changeCharacter}/> : null;
 
-        var subButton = !!this.state.character ? <EnterButon param={this.state.character} url={`/Character`} img={<img src='http://www.freepngimg.com/thumb/submit_button/25387-5-submit-button-clipart-thumb.png' alt='Submit Button'/>} /> : null;
+        var subButton = !!this.state.character ? <EnterButon param={this.state.character} url={`/Character`} img={<img src='http://www.clker.com/cliparts/3/a/e/h/l/o/simple-gray-submit-button-three-hi.png' alt='Submit Button'/>} /> : null;
 
 
         return(

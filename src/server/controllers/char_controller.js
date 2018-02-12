@@ -1,13 +1,13 @@
 const axios = require('axios')
 
 let char = [];
-let index = 0;
+let count = 0;
 
 module.exports = {
     create: (req, res) => {
         const {name} = req.body;
-        char.push({name, index})
-        index++;
+        char.push({name, count})
+        count++;
     //     const {name} = req.body;
     //     axios.get(`https://swapi.co/api/people?search=`+"Luke")
     //     .then(res => {
@@ -21,4 +21,9 @@ module.exports = {
     //     });
         res.status(200).send(char);
     },
+    
+    delete: (req, res) =>{
+        char.splice(0, char.length-1);
+        res.status(200).send(char);
+    }
 }
