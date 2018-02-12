@@ -12,11 +12,13 @@
 
 .finn-stats{
     height: 51vh;
-    width: 45%;
+    width: 33%;
     margin-left: 65%;
     margin-top: 5vh;
     z-index: 2;
     color: black;
-    background: skyblue;
+    background: rgb(157, 195, 255);
     font-size: 50px;
+    opacity: .7;
+    border-radius: 20px;
 }
